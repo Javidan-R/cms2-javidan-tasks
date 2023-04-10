@@ -1,0 +1,40 @@
+#basliq{
+    background-color: aqua;
+    text-align: center;    
+    font-size: calc(5px + 2vw);
+}
+.lorem{
+    width: 12vw;
+    height: 30vh;
+    background-color: rgb(222, 184, 135);
+    text-align: justify;
+}
+.unknownImage{
+    width:25vw;
+    height: 22vh;
+    background: url('https://via.placeholder.com/400x200') no-repeat center/cover;
+    margin: 10px 0;
+}
+.roseBackColor{
+    width: 12vw;
+    height: 30vh;
+    background-color: #006666;
+    position: relative;
+    margin-top: 5px;
+} 
+.rose{
+    width: 65%;
+    height: 65%;
+    text-align: center;
+    background: url('https://live.staticflickr.com/65535/51406994274_169283dd2c_b.jpg')  no-repeat center/cover;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.text{
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+}
