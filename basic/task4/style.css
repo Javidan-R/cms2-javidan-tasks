@@ -4,14 +4,15 @@ header{
     position: sticky;
     background-color: #F95961;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon{
     width: 180px;
     height: 80px;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     margin-right: 100px;
     
 }
