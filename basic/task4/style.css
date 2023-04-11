@@ -1,4 +1,4 @@
-header{
+/* header{
     height: 100px;
     width: 100%;
     position: sticky;
@@ -6,15 +6,15 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+
+ 
+} */
 .icon{
     width: 180px;
     height: 80px;
     text-align: center;
     display: flex;
-    
-    margin-right: 100px;
-    
+    margin-right: 100px;   
 }
 .menu {
     display: flex;
