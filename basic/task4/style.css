@@ -39,23 +39,23 @@ a{
     font-family: italic ;
     font-size: 20px;
 }
-
 .background{
-    position: relative;
-}
-img{
     width: 100%;
     height: 500px;
     background-position:  center ;
     background-repeat: no-repeat;
-    background-size: contain;   
+    background-size: cover;   
+    background-image: url('./lake-7892215_960_720.webp');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .background-h1{
     position: absolute;
-    left: 34%;
-    top: 38%;
     display: flex;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
     color: #fff;
 }
@@ -79,6 +79,8 @@ img{
 }
 .title >hr{
     width: 300px;
+    color: #F95961;
+    box-shadow: 2px 2px 3px #0c0606;
 }
 .desc{
     width: 80%;
@@ -87,7 +89,7 @@ img{
 }
 .desc p{
     font-size: 16px;
-    color: #F95961;
+    color: #000000;
 }
 button{
     padding: 5px 10px;
