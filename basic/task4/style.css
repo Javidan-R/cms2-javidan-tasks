@@ -1,26 +1,27 @@
-/* header{
+header{
     height: 100px;
     width: 100%;
     position: sticky;
     background-color: #F95961;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
- 
-} */
+}
 .icon{
     width: 180px;
     height: 80px;
     text-align: center;
     display: flex;
-    margin-right: 100px;   
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    
 }
+
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 20%;
+    font-size: 20px;
 }
 
 .menu li{
@@ -36,5 +37,63 @@ a{
     text-decoration: none;
     color: #fff;
     font-family: italic ;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.background{
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 500px;
+    background-position:  center ;
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.background-h1{
+    position: absolute;
+    left: 34%;
+    top: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.container{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+.content{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+.title{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.title >h1{
+    text-align: center;
+}
+.title >hr{
+    width: 300px;
+}
+.desc{
+    width: 80%;
+    display: flex;
+    margin: auto; 
+}
+.desc p{
+    font-size: 16px;
+    color: #F95961;
+}
+button{
+    padding: 5px 10px;
+    display: flex;
+    margin:20px auto;
+    background-color: #F95961;
+    border: 1px solid transparent;
+    border-radius: 3px;
 }

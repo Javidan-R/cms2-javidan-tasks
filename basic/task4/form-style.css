@@ -50,12 +50,10 @@ input:focus{
     position: absolute;
     top: 28px;
     right: 20px;
-    opacity: .3;
-     
+    opacity: .3; 
 }
 .submit{
     position: relative;
-   
 }
 .btn{
     width: 100%;
@@ -70,7 +68,5 @@ input:focus{
 }
 .btn:hover{
     background-image: linear-gradient(to left, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
-
-
 }
 /*  */
