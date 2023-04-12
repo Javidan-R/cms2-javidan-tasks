@@ -1,0 +1,23 @@
+.links{
+    background-color: #000;
+}
+.nav-link{
+    color:gray;
+}
+.active{
+    color: #fff;
+}
+.nav-link:hover{
+    color: #fff;
+}
+.stand-card{
+    border: 1px dashed gray; 
+    border-radius: 0 0 20% 0;
+    margin: 20px auto;
+    
+}
+.stand-card:hover > strong{
+    color: rgb(230, 32, 32);  
+
+}
+
