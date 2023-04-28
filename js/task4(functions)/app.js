@@ -1,71 +1,115 @@
-// let weight = +prompt("Cekninizi daxil edin")
-// let height = +prompt("boyunuzu daxil edin")
-// function calcBmi(weight , height){
-//     let bmi  = ( weight / (height * height )) *100
-//     return  bmi.toFixed(3)*100
-// }
-// let saybmi = calcBmi(weight , height)
-// if (saybmi <= 18.5) {
-//     console.log(`sizin BMI indexiniz ${saybmi}-dir ve bu Underweight`)
-// } else if(saybmi <25){
-//     console.log(`sizin BMI indexiniz ${saybmi}-dir ve bu Normal weight`)
-// } else if(saybmi <29.9){
-//     console.log(`sizin BMI indexiniz ${saybmi}-dir ve bu Overweight`)
-// }else if(saybmi >30){
-//     console.log(`sizin BMI indexiniz ${saybmi}-dir ve bu Obese`)
-// } else{
-//     console.log('proqramda sazlamalar gedir')
+
+    // function sum(param1, param2) {
+    //   console.log(param1 + param2);
+    // }
+    // sum(234, 436);
+
+    // function pow(params1, params2) {
+    //   return params1 ** params2;
+    // }
+    // console.log(pow(3, 4));
+
+    // function isEvenOrOdd(param) {
+    //   if (param % 2 == 0) {
+    //     console.log(`${param} cut ededdir`);
+    //   } else {
+    //     console.log(`nahh`);
+    //   }
+    // }
+
+    //  funksiyanni fun-ya argument kimivermek callback
+
+    // const formalMeet = (name, gender) => {
+    //  gender === 'm' ? console.log(`Mr.${name}`) : console.log(`Mr.${name}`)
+    // }
+    // formalMeet('Cavidan' ,'m')
+    // function checkSeason(month) {
+    //     if (month >= 3 && month <= 5) {
+    //         return "Spring"
+    //     } else  if(month >= 6 && month <= 8){
+    //         return "Summer"
+    //     }else  if(month >= 9 && month <= 11){
+    //         return "Autumn"
+    //     }else {
+    //         return "Winter"
+    //     } 
+    // }
+    // checkSeason(11)
+
+    // const changeNum = promptNum =>   Number(promptNum)   // change nUMBER IS FUNCTION
+      let num1 = prompt("Eded 1")
+    // let num2 = changeNum(prompt("Eded 2"))
+    //  const showFun =  par  => {  console.log(par)    }   // SHOW FUNCTION 
+    // const sum  = (num1 , num2) => num1 + num2    // sum
+    // const calcPow =  (num1 , num2) =>   num1 ** num2    // pow
+    // const divide =  (num1 , num2) =>   num1 / num2    // divide
+    // const subtract =  (num1 , num2) =>   num1 - num2    //subtract 
+    // const multiply =  (num1 , num2) =>   num1 * num2    //multiply
+    // showFun(calcPow(num1 , num2)) 
+    // showFun(sum(num1 , num2))
+    // showFun(multiply(num1,num2))
+
+    // let num1 = prompt("eded daxil edin")
+    // task1
+    // const reverseNum = par =>  {
+    //     let result = 0;
+    //     result = par.toString.split("").reverse().join("")
+    //     console.log("Reversed number is : "+result);
+    // }
+    // reverseNum(num1)
+    // task2
+    // const genNum = par =>{  Math.floor(Math.random() * par) + 1; 
+    // showFun(genNum(num1))
+
+    // task3
+
+    // const  addNumber = (...num) => return num.reduce((acc, cur) => acc + cur);
+    // console.log(addNumber(23,3,4,4,44))
+
+    // task4
+    // const arr = [[2,3,4],[6,4,9],[34,6,4]];
+    // function addArrays(par) { 
+    //     let flattenedList = par.flat();    
+    //     return flattenedList
+    // }
+    // console.log(addArrays(arr))
+
+    // task5
+    // function changeToFahrenheit(celsius) {
+    //   return (celsius * 1.8) + 32;
+    // }
+    //changeToFahrenheit(32)
+
+    //////////// Loops Tasks /////////////
+
+// task1 
+// for (let i = 0; i < num1; i++) {
+//     console.log(i)
 // }
 
-// function sum(param1, param2) {
-//   console.log(param1 + param2);
-// }
-// sum(234, 436);
 
-// function pow(params1, params2) {
-//   return params1 ** params2;
-// }
-// console.log(pow(3, 4));
 
-// function isEvenOrOdd(param) {
-//   if (param % 2 == 0) {
-//     console.log(`${param} cut ededdir`);
-//   } else {
-//     console.log(`nahh`);
-//   }
-// }
-// let num = 15;
-// let res = " ";
+    // task2 
+    
+      // setInterval(function() {
+      //   num1 === 5 ? console.log(`${num1}`) : false
+      // }, 1000); 
 
-// if (num % 3 === 0) {
-//   res += "fiz";
-// }
+     
+    // task 3
 
-//  funksiyanni fun-ya argument kimivermek callback
+    // function numPow(num1, num2) {
+    //     return num1 ** num2
+    // }
+    // console.log(numPow(3,4))
 
-// const formalMeet = (name, gender) => {
-//  gender === 'm' ? console.log(`Mr.${name}`) : console.log(`Mr.${name}`)
-// }
-// formalMeet('Cavidan' ,'m')
-// function checkSeason(month) {
-//     if (month >= 3 && month <= 5) {
-//         return "Spring"
-//     } else  if(month >= 6 && month <= 8){
-//         return "Summer"
-//     }else  if(month >= 9 && month <= 11){
-//         return "Autumn"
-//     }else {
-//         return "Winter"
-//     } 
-// }
-// checkSeason(11)
-let num1 = changeNum(prompt("Eded 1"))
-let num2 = changeNum(prompt("Eded 2"))
-const changeNum = promptNum =>   Number(promptNum)   // change nUMBER IS FUNCTION
-const showPow =  par  => {  console.log(par)    }   // SHOW FUNCTION 
-const sum  = (num1 , num2) => num1 + num2    // sum
-const calcPow =  (num1 , num2) =>   num1 ** num2    // pow
-const divide =  (num1 , num2) =>   num1 / num2    // divide
-const subtract =  (num1 , num2) =>   num1 - num2    //subtract 
-const multiply =  (num1 , num2) =>   num1 * num2    //multiply
-showPow(calcPow(num1 , num2)) 
+    //taks4
+
+    // function printPatter (par){  
+    //     let hastag = " "
+    //     for (let i = 1; i < par; i++) {
+    //         hastag += i
+    //         console.log(hastag)   
+    //     }
+    // }
+    // console.log(printPatter(9))
