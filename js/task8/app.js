@@ -21,3 +21,18 @@ for (let i = 11; i <= 99; i += 2) {
 }
 
 console.log("İki basamaklı tek sayıların toplamı: " + toplam);
+
+// 
+function isLucky(bilet) {
+    let bilet_str = bilet.toString().padStart(6, "0");
+    
+    let sum1 = parseInt(bilet_str[0]) + parseInt(bilet_str[1]) + parseInt(bilet_str[2]);
+    
+    let sum2 = parseInt(bilet_str[3]) + parseInt(bilet_str[4]) + parseInt(bilet_str[5]);
+    
+    return sum1 === sum2;
+  }
+  
+  console.log(isLucky(123321)); // true
+  console.log(isLucky(123456)); // false
+  
