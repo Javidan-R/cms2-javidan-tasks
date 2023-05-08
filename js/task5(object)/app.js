@@ -92,10 +92,3 @@ let total = 0
 
 console.log(laptop.calcTotal())
 
-
-// -----------------------------------------------------------------------------------------
-
-let name = prompt(" jfyt")
-let surname = prompt("gfuyf")
-
-console.log(name.concat())
