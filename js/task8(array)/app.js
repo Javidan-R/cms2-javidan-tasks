@@ -91,24 +91,20 @@
 // ]
 // arr[0].name = 'Cavidan'
 // arr[2].workday[6] ='  '
-// const arr2 = ["esqin 2000", "cavidan 2333", "ali 3422"];
-// const arr2 = ["esqin 2000", "cavidan 2333", "ali 3422"];
 
+// const arr2 = ["esqin 2000", "cavidan 2333", "ali 3422"];
 // arr2.sort((a, b) => {
 //   if (a > b) return 1;
 //   if (b > a) return -1;
 //   return 0;
 // });
 
+
+// arr2.sort((a, b) => {
+//   return parseInt(a.split(' ')[1]) -  parseInt(b.split(' ')[1]);
+// });
+
 // console.log(arr2);
-// const familySentence = (momName , dadName , ...childName) =>{
-//  let total = ''
-//  for (let child of childName) {
-//   total += child
-//  }
-//  return total
- 
-// }
 // function familySentence(momName, dadName, ...childName) {
 //   let sentence = `${momName} and ${dadName} have ${childName.length} children: `;
 //   sentence += childName.join(", ");
@@ -125,16 +121,15 @@
 // }
 // console.log(wedIndex);
 
-// let arr = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 // function filterByWith(letter) {
 //   let result = [];
 //   for (let element of arr) {    if (element.includes(letter)) {    result.push(element);   }   }
 //   return result;
 // }
 // let filteredArr = filterByWith('t');
-// filteredArr.length !== 0 ?  console.log(filteredArr) : console.log("No elements);
+// filteredArr.length !== 0 ?  console.log(filteredArr) : console.log("No elements")
 
-// let arr = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
+// let arr3 = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat']
 //  const firstUpper  =  arr => {
 //   let newArr = []
 //   for (let element of arr) {
@@ -142,10 +137,38 @@
 //   }
 //   return newArr
 // }  
-// console.log(firstUpper(arr))
+// console.log(firstUpper(arr3))
 
 
 
 
 
+function findMenBetween0And100(numMen) {
+  class Person {
+    constructor(age) {
+      this.age = age;
+    }
+  }
+  let menBetween0And100 = 0;
+  let ageCounts = {};
+
+  for (let i = 0; i < numMen; i++) {
+    this.age = Math.floor(Math.random() * 101);
+  
+    this.person = new Person(age);
+
+    if (person.age <= 100) {
+      menBetween0And100++;
+
+      if (ageCounts.hasOwnProperty(person.age)) {
+         ageCounts[person.age]++; 
+      } else {
+        ageCounts[person.age] = 1;
+      }
+      
+    }
+  }
+  return ({ menBetween0And100, ageCounts });
+}
+console.log(findMenBetween0And100(10000000));
 
