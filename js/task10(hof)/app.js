@@ -244,4 +244,12 @@ const users = [
 // const  result1 = users.some((user , index ) =>{    user.website.endsWith(".net")    })
 // console.log(result1)
 
-users.filter((user) => user.website.endsWith(".org")).forEach((user)=>console.log(user.website))
+// users.filter((user) => user.website.endsWith(".org")).forEach((user)=>console.log(user.website))
+// 1
+const newNames = users.map((user)    =>{
+    return {
+        email : user.email,
+        company : user.company
+    }
+}) 
+console.log(newNames)
