@@ -22,15 +22,15 @@
 //     }
 //     return multiply
 // }
-// console.log(multiplyArrs(5,4,2))    
+// console.log(multiplyArrs(5,4,2))
 
 // task 4 -------------------------------------
- const strings =['sdsd', 'SDSDSDS', "DDSDSD"]
- let arr = []
-for (let i = 0; i < strings.length; i++) {
-   arr.push(strings[i].length)
-}
-console.log(arr)
+// const strings = ["sdsd", "SDSDSDS", "DDSDSD"];
+// let arr = [];
+// for (let i = 0; i < strings.length; i++) {
+//   arr.push(strings[i].length);
+// }
+// console.log(arr);
 // console.log(convertElementsToItsLengths(strings)); // [5, 5, 3, 3, 3]
 
 // task 5 --------------------------------------
@@ -48,13 +48,13 @@ console.log(arr)
 //     if (arr.length === 0) {
 //         return undefined;
 //       }
-//     let max = arr[0]; 
-//     for (let i = 1; i < arr.length; i++) { 
-//       if (arr[i] > max) { 
+//     let max = arr[0];
+//     for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] > max) {
 //         max = arr[i];
 //       }
 //     }
-//     return max;     
+//     return max;
 //   }
 
 //   console.log(findMax(strings))
@@ -66,10 +66,44 @@ console.log(arr)
 //     { sender: 'David', receiver: 'Charlie', hasRead: true },
 //     { sender: 'Eve', receiver: 'Frank', hasRead: false }
 //   ];
-  
+
 //   function getReadMessages(messages) {
 //     return messages.filter(message => message.hasRead);
 //   }
-  
+
 //   const readMessages = getReadMessages(messages);
 //   console.log(readMessages);
+
+// task unknown ----------------
+let population = 100;
+for (let i = 1; i <= 100; i++) {
+  population += 200;
+  if (population > 10000) {
+    population -= 1000;
+  }
+}
+console.log(population);
+
+let person =100
+for (let i = 0; i < 100; i++) {
+    
+}
+const factorial = (n) => {
+    if (n === 0) {
+      return 1;
+    } else {
+      return n * factorial(n - 1);
+    }
+  };
+
+  
+const nCr = (n, r) => {
+    return factorial(n) / (factorial(r) * factorial(n - r));
+  };
+  
+  const totalPeople = 20;
+  const teamSize = 5;
+  
+  const numberOfTeams = nCr(totalPeople, teamSize);
+
+  console.log(` ${teamSize}  ${totalPeople} ${Math.floor(numberOfTeams)}`);
