@@ -76,10 +76,11 @@
 
 // task unknown ----------------
 let population = 100;
-for (let i = 1; i <= 100; i++) {
-  population += 200;
-  if (population > 10000) {
-    population -= 1000;
+let first =100
+for (let i = 1; i <= 50; i++) {
+  population = first*2 + population;
+  if (population > 100000) {
+    population -= 10000;
   }
 }
 console.log(population);
@@ -101,8 +102,8 @@ const nCr = (n, r) => {
     return factorial(n) / (factorial(r) * factorial(n - r));
   };
   
-  const totalPeople = 20;
-  const teamSize = 5;
+  const totalPeople = 100;
+  const teamSize = 5
   
   const numberOfTeams = nCr(totalPeople, teamSize);
 

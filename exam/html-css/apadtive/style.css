@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .card {
+    height: 100vw;
+    padding: 30px 100px;
+  }
+  .card-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-top--right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .card-top--right h3 {
+    font-size: 36px;
+    text-align: left;
+  }
+  .card-top--right p {
+    width: 60%;
+  }
+  .card-top--left {
+    width: 100%;
+  }
+  .card-top--left img {
+    width: 400px;
+  }
+  .card-bottom {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .card-bottom-left img {
+    width: 232px;
+    height: 203px;
+  }
+  .card-bottom--right {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card-bottom--right--cards h4 {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .card-bottom--right--cards p {
+    width: 80%;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  @media (max-width: 1024px) {
+    .card {
+      padding: 30px 50px;
+    }
+    .card-top--right p {
+      width: 100%;
+    }
+    .card-top--left img {
+      width: 300px;
+    }
+    .card-bottom-left img {
+      width: 180px;
+      height: 150px;
+    }
+    .card-bottom--right {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .card-bottom--right--cards h4 {
+      font-size: 18px;
+    }
+    .card-bottom--right--cards p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    .card-top {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .card-top--right {
+      justify-content: center;
+      align-items: center;
+    }
+    .card-top--right h3 {
+      text-align: center;
+    }
+    .card-top--right p {
+      text-align: center;
+    }
+    .card-top--left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-top--left img {
+      width: 200px;
+    }
+    .card-bottom-left {
+      display: none;
+    }
+    .card-bottom--right {
+      justify-content: center;.card {
+      height: 100vw;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card-bottom--right h4 {
+      text-align: center;
+    }
+    .card-bottom--right p {
+      text-align: center;
+      width: 100%;
+    }
+}}

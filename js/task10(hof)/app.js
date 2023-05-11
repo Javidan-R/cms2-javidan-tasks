@@ -233,7 +233,6 @@ const users = [
     }
 
 ]
-
 // users.forEach((user , index , arr) => {
 //     console.log(`User name:${index}  ${user.name} Email : ${user.email}`)
 // })
@@ -246,10 +245,32 @@ const users = [
 
 // users.filter((user) => user.website.endsWith(".org")).forEach((user)=>console.log(user.website))
 // 1
-const newNames = users.map((user)    =>{
-    return {
-        email : user.email,
-        company : user.company
-    }
-}) 
-console.log(newNames)
+// const newNames = users.map((user)    =>{
+//     return {
+//         email : user.email,
+//         company : user.company
+//     }
+// }) 
+// console.log(newNames)
+
+
+// task 1
+arr = [1, 2 ,3 , 4, 5]
+const  arrFunction  = params => {
+    newArr = []
+    params.forEach(element => {    newArr.push(element **2)     });
+    console.log(newArr) 
+}
+arrFunction(arr)
+
+
+// // task 2
+// let num  = +prompt("eded")
+// const result = arr.some(n=> n.toString().includes(num) )
+// console.log(result)
+
+// const evenArray = arr =>{
+//     if () {
+        
+//     }
+// }
