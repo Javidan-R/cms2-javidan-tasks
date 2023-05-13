@@ -170,5 +170,5 @@ function findMenBetween0And100(numMen) {
   }
   return ({ menBetween0And100, ageCounts });
 }
-console.log(findMenBetween0And100(10000000));
+console.log(findMenBetween0And100(1000));
 
