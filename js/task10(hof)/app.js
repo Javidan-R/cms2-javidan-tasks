@@ -290,17 +290,87 @@ const users = [
 //  }) 
  
 //  console.log(newUser);
-let nums = [12,2,33,3,343,3,5,8 , 12,35,53,53,5,3,134,135,46,56,3,4,46]
+// let nums = [12,2,33,3,343,3,5,8 , 12,35,53,53,5,3,134,135,46,56,3,4,46]
 
-const countOdds = nums.reduce((a,b) =>{
-    if(b%2=== 0){
-        return a+1
-    } 
-    return  a
- } ,0)
- console.log(`cut: ${countOdds}`);
- let allNum  = nums.reduce((a,b) =>{ b%2 === 0 ?  a.even++ :  a.odd++
-     return a
- } , {even: 0 , odd: 0})
+// const countOdds = nums.reduce((a,b) =>{
+//     if(b%2=== 0){
+//         return a+1
+//     } 
+//     return  a
+//  } ,0)
+//  console.log(`cut: ${countOdds}`);
+//  let allNum  = nums.reduce((a,b) =>{ b%2 === 0 ?  a.even++ :  a.odd++
+//      return a
+//  } , {even: 0 , odd: 0})
 
- console.log(allNum) 
+//  console.log(allNum) 
+//---------------------------------------------------------------------------------------------------------
+//15/05/2023
+// Task 1:
+const filteredUsersZip = users.filter(user => user.address.zipcode <= 50000)
+
+// Task 2:
+
+const filteredUsersNet = users.filter(user => user.email.endsWith('.net'));
+// Task 3:
+
+const filteredUsersWorld = users.filter(user => user.name.startsWith('C'));
+const result1 = filteredUsersWorld.map(user => ({ name: user.name, email: user.email }));
+
+// Task 4:
+
+const resultUpper = users.map(user => user.name.toUpperCase());
+
+// Task 5:
+
+const length = users.length;
+
+// Task 6:
+
+const sumUser = users.reduce((sum, user) => sum + user.id, 0);
+
+// Task 7:
+
+const maxUser = users.reduce((maxUser, user) => user.id > maxUser.id ? user : maxUser, users[0]);
+
+// Task 8:
+
+const sortUser = users.map(user => user.name).sort((a,b)=>b-a);
+
+// Task 9:
+
+const filteredSrartsWith = users.filter(user => user.phone.startsWith('4'));
+
+// Task 10:
+
+const filteredIncludes = users.filter(user => user.email.includes('org'));
+
+// Task 11:
+
+const filteredSrartsWithNumber = users.filter(user => user.phone.startsWith('1-770'));
+
+// Task 12:
+
+const resultAddress = users.map(user => `${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`);
+
+// Task 13:
+
+const resultCity = users.map(user => user.address.city);
+
+// Task 14:
+
+const resultToLower = users.map(user => user.name.toLowerCase());
+
+// Task 15:
+
+const totalLength = users.reduce((sum, user) => sum + user.name.length, 0);
+const result = totalLength / users.length;
+
+// Task 16:
+
+const resultId = users.map(user => user.id * 2);
+
+// Task 17:
+
+const totalChars = users.reduce((sum, user) => sum + user.name.length, 0);
+
