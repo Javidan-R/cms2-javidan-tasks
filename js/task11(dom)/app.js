@@ -9,16 +9,18 @@
 //     alert("ada")
 // }
 
-const enterContact = document.querySelector('.enterContact')
-const addButton = document.querySelector('.btn')
-const result = document.querySelector('.result')
+// const enterContact = document.querySelector('.enterContact')
+// const addButton = document.querySelector('.btn')
+// const result = document.querySelector('.result')
 
-addButton.addEventListener('click',()=>{ 
-    let listContact = document.createElement('p')
-    result.append(listContact)
-    listContact.innerHTML = enterContact.value
-    listElem.onclick = () => newElem.remove()
-    enterContact.value = " "
+// addButton.addEventListener('click',()=>{ 
+//     let listContact = document.createElement('p')
+//     result.append(listContact)
+//     listContact.innerHTML = enterContact.value
+//     listElem.onclick = () => newElem.remove()
+//     enterContact.value = " "
 
 
-})
+// })
+
+
