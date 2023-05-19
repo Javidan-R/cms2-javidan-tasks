@@ -27,3 +27,6 @@ const DOMAIN = "javidanrajabl.com"
 let email = username + "@" + DOMAIN
 
 console.log("Salam ", username, "saytımıza xoş gəldiniz", "email adresiniz:", email)
+
+
+
