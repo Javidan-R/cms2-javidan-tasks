@@ -38,6 +38,5 @@ function laptopFind({name = "Dell", model , country: {name: countryName, capital
 laptopFind(laptop)
 
 
-
 // ------------- CLOSURE --------------
 
