@@ -17,8 +17,6 @@ function writeInfo({creator ,date }) {
 }
 writeInfo(js)
 
-
-
 const laptop  = {
     name : "Dell" ,
     model: "Latitude",
