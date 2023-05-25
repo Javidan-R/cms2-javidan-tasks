@@ -233,144 +233,146 @@ const users = [
     }
 
 ]
+
 // users.forEach((user , index , arr) => {
-//     console.log(`User name:${index}  ${user.name} Email : ${user.email}`)
-// })
-
-// let result2 = users.every((user , index ) =>{    user.company.name  })
-// console.log(result2)
-
-// const  result1 = users.some((user , index ) =>{    user.website.endsWith(".net")    })
-// console.log(result1)
-
-// users.filter((user) => user.website.endsWith(".org")).forEach((user)=>console.log(user.website))
-// 1
-// const newNames = users.map((user)    =>{
-//     return {
-//         email : user.email,
-//         company : user.company
-//     }
-// }) 
-// console.log(newNames)
-
-
-// // task 1
-// arr = [1, 2 ,3 , 4, 5]
-// const  arrFunction  = params => {
-//     newArr = []
-//     params.forEach(element => {    newArr.push(element **2)     });
-//     console.log(newArr) 
-// }
-// arrFunction(arr)
-
-
-// // task 2
-// let num  = +prompt("eded")
-// const result = arr.some(n=> n.toString().includes(num) )
-// console.log(result)
-
-// const evenArray = arr =>{
-//     if () {
-        
-//     }
-// }
-
-// users
-// .filter((user) => user.phone.startsWith("1"))
-
-// .forEach((user)=> console.log(`${user.name} ${user.email}` ))
-
-// const newUser = users.map(({id, name, phone, company:{name : companyName}})=>({id ,name ,phone, companyName}))
-// console.log(newUser)
-
-//  const newUser = users
-//  .map(({address:{geo : { lat,lng}}})=>({lat , lng}))
-//  .filter((user) =>{
-//    return user.address.geo.lat.startsWith("-71") &&  user.address.geo.lng.startsWith("71")
-//  }) 
- 
-//  console.log(newUser);
-// let nums = [12,2,33,3,343,3,5,8 , 12,35,53,53,5,3,134,135,46,56,3,4,46]
-
-// const countOdds = nums.reduce((a,b) =>{
-//     if(b%2=== 0){
-//         return a+1
-//     } 
-//     return  a
-//  } ,0)
-//  console.log(`cut: ${countOdds}`);
-//  let allNum  = nums.reduce((a,b) =>{ b%2 === 0 ?  a.even++ :  a.odd++
-//      return a
-//  } , {even: 0 , odd: 0})
-
-//  console.log(allNum) 
-//---------------------------------------------------------------------------------------------------------
-//15/05/2023
-// Task 1:
-const filteredUsersZip = users.filter(user => user.address.zipcode <= 50000)
-
-// Task 2:
-
-const filteredUsersNet = users.filter(user => user.email.endsWith('.net'));
-// Task 3:
-
-const filteredUsersWorld = users.filter(user => user.name.startsWith('C'));
-const result1 = filteredUsersWorld.map(user => ({ name: user.name, email: user.email }));
-
-// Task 4:
-
-const resultUpper = users.map(user => user.name.toUpperCase());
-
-// Task 5:
-
-const length = users.length;
-
-// Task 6:
-
-const sumUser = users.reduce((sum, user) => sum + user.id, 0);
-
-// Task 7:
-
-const maxUser = users.reduce((maxUser, user) => user.id > maxUser.id ? user : maxUser, users[0]);
-
-// Task 8:
-
-const sortUser = users.map(user => user.name).sort((a,b)=>b-a);
-
-// Task 9:
-
-const filteredSrartsWith = users.filter(user => user.phone.startsWith('4'));
-
-// Task 10:
-
-const filteredIncludes = users.filter(user => user.email.includes('org'));
-
-// Task 11:
-
-const filteredSrartsWithNumber = users.filter(user => user.phone.startsWith('1-770'));
-
-// Task 12:
-
-const resultAddress = users.map(user => `${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`);
-
-// Task 13:
-
-const resultCity = users.map(user => user.address.city);
-
-// Task 14:
-
-const resultToLower = users.map(user => user.name.toLowerCase());
-
-// Task 15:
-
-const totalLength = users.reduce((sum, user) => sum + user.name.length, 0);
-const result = totalLength / users.length;
-
-// Task 16:
-
-const resultId = users.map(user => user.id * 2);
-
-// Task 17:
-
-const totalChars = users.reduce((sum, user) => sum + user.name.length, 0);
-
+    //     console.log(`User name:${index}  ${user.name} Email : ${user.email}`)
+    // })
+    
+    // let result2 = users.every((user , index ) =>{    user.company.name  })
+    // console.log(result2)
+    
+    // const  result1 = users.some((user , index ) =>{    user.website.endsWith(".net")    })
+    // console.log(result1)
+    
+    // users.filter((user) => user.website.endsWith(".org")).forEach((user)=>console.log(user.website))
+    // 1
+    // const newNames = users.map((user)    =>{
+    //     return {
+    //         email : user.email,
+    //         company : user.company
+    //     }
+    // }) 
+    // console.log(newNames)
+    
+    
+    // // task 1
+    // arr = [1, 2 ,3 , 4, 5]
+    // const  arrFunction  = params => {
+    //     newArr = []
+    //     params.forEach(element => {    newArr.push(element **2)     });
+    //     console.log(newArr) 
+    // }
+    // arrFunction(arr)
+    
+    
+    // // task 2
+    // let num  = +prompt("eded")
+    // const result = arr.some(n=> n.toString().includes(num) )
+    // console.log(result)
+    
+    // const evenArray = arr =>{
+    //     if () {
+            
+    //     }
+    // }
+    
+    // users
+    // .filter((user) => user.phone.startsWith("1"))
+    
+    // .forEach((user)=> console.log(`${user.name} ${user.email}` ))
+    
+    // const newUser = users.map(({id, name, phone, company:{name : companyName}})=>({id ,name ,phone, companyName}))
+    // console.log(newUser)
+    
+    //  const newUser = users
+    //  .map(({address:{geo : { lat,lng}}})=>({lat , lng}))
+    //  .filter((user) =>{
+    //    return user.address.geo.lat.startsWith("-71") &&  user.address.geo.lng.startsWith("71")
+    //  }) 
+     
+    //  console.log(newUser);
+    // let nums = [12,2,33,3,343,3,5,8 , 12,35,53,53,5,3,134,135,46,56,3,4,46]
+    
+    // const countOdds = nums.reduce((a,b) =>{
+    //     if(b%2=== 0){
+    //         return a+1
+    //     } 
+    //     return  a
+    //  } ,0)
+    //  console.log(`cut: ${countOdds}`);
+    //  let allNum  = nums.reduce((a,b) =>{ b%2 === 0 ?  a.even++ :  a.odd++
+    //      return a
+    //  } , {even: 0 , odd: 0})
+    
+    //  console.log(allNum) 
+    //---------------------------------------------------------------------------------------------------------
+    //15/05/2023
+    // Task 1:
+    const filteredUsersZip = users.filter(user => user.address.zipcode <= 50000)
+    
+    // Task 2:
+    
+    const filteredUsersNet = users.filter(user => user.email.endsWith('.net'));
+    // Task 3:
+    
+    const filteredUsersWorld = users.filter(user => user.name.startsWith('C'));
+    const result1 = filteredUsersWorld.map(user => ({ name: user.name, email: user.email }));
+    
+    // Task 4:
+    
+    const resultUpper = users.map(user => user.name.toUpperCase());
+    
+    // Task 5:
+    
+    const length = users.length;
+    
+    // Task 6:
+    
+    const sumUser = users.reduce((sum, user) => sum + user.id, 0);
+    
+    // Task 7:
+    
+    const maxUser = users.reduce((maxUser, user) => user.id > maxUser.id ? user : maxUser, users[0]);
+    
+    // Task 8:
+    
+    const sortUser = users.map(user => user.name).sort((a,b)=>b-a);
+    
+    // Task 9:
+    
+    const filteredSrartsWith = users.filter(user => user.phone.startsWith('4'));
+    
+    // Task 10:
+    
+    const filteredIncludes = users.filter(user => user.email.includes('org'));
+    
+    // Task 11:
+    
+    const filteredSrartsWithNumber = users.filter(user => user.phone.startsWith('1-770'));
+    
+    // Task 12:
+    
+    const resultAddress = users.map(user => `${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`);
+    
+    // Task 13:
+    
+    const resultCity = users.map(user => user.address.city);
+    
+    // Task 14:
+    
+    const resultToLower = users.map(user => user.name.toLowerCase());
+    
+    // Task 15:
+    
+    const totalLength = users.reduce((sum, user) => sum + user.name.length, 0);
+    const result = totalLength / users.length;
+    
+    // Task 16:
+    
+    const resultId = users.map(user => user.id * 2);
+    
+    // Task 17:
+    
+    const totalChars = users.reduce((sum, user) => sum + user.name.length, 0);
+    
+    

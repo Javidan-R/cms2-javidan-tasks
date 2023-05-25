@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vehicle Inventory Management</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Vehicle Inventory Management</h1>
+
+  <div id="vehicle-list">
+    <!-- Vehicle cards will be dynamically added here -->
+  </div>
+
+  <div id="add-vehicle-form">
+    <h2>Add Vehicle</h2>
+    <form id="vehicle-form">
+      <label for="model">Model:</label>
+      <input type="text" id="model" required>
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" required>
+
+      <label for="fuel">Fuel:</label>
+      <input type="text" id="fuel" required>
+
+      <label for="wheelCount">Wheel Count:</label>
+      <input type="number" id="wheelCount" required>
+
+      <label for="landOrAir">Land or Air:</label>
+      <input type="text" id="landOrAir" required>
+
+      <button type="submit">Add</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
