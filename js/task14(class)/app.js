@@ -34,3 +34,5 @@ Number.prototype.isEven = function () {
 };
 const ed = 13;
 console.log(ed.isEven());
+
+// TASKS
