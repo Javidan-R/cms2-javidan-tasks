@@ -234,7 +234,7 @@ const users = [
 
 ]
 
-
+ 
 // users.forEach((user , index , arr) => {
     //     console.log(`User name:${index}  ${user.name} Email : ${user.email}`)
     // })
