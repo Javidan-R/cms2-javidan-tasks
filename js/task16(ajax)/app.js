@@ -30,14 +30,22 @@
 //       menuInside.textContent = meal.strIngredient1;
 //       menuResept.textContent = meal.strImageSource;
 //     }
+//   }).catch(error => {
+ //   console.log('Hata:', error);
+// });
+// ---------------------------------------- TASK 2--------------------
+
+// const url = 'https://swapi.dev/api/people/';
+
+// fetch(url)
+//   .then(response => response.json())
+//   .then(data => {
+//     const people = data.results;
+//     people.forEach(person => {
+//         document.write(`<li>${person.description}<p>Personaj adi:${person.name}</p> <p>Gender:${person.gender}</p>  </li>`)
+//     });
+//     // İnsanları burada işleyebilir veya görüntüleyebilirsiniz
+//   })
+//   .catch(error => {
+//     console.log('Hata:', error);
 //   });
-
-// ----------------------------------------
-
-const urlStarWarsPeople = `https://www.swapi.tech/api/people/`
-
-fetch(urlStarWarsPeople).then((resp)=> resp.json()).then((StarWarsPeople)=>{
-    const meal = StarWarsPeople.results;
-console.log(meal);
-   
-})
