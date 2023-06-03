@@ -1,0 +1,27 @@
+// setting 1rem globally
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+@import 'core/s_mixins';
+@import 'core/s_variables';
+@import 'core/s_reset';
+@import 'core/s_fonts';
+
+// Bootstrap and its default variables
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../node_modules/swiper/swiper';
+@import 'libs/simplebar';
+
+@import 'core/s_global';
+@import 'core/s_pictures';
+@import 'core/s_animations';
+
+@import 'layouts/layout';
+@import 'core/s_type';
+@import 'core/forms';
+@import 'core/s_icons';
+@import 'core/s_buttons';
+@import 'core/s_tabs';
+@import 'core/s_tables';

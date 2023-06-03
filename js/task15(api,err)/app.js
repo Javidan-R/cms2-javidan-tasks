@@ -49,3 +49,24 @@
 //   .catch(error => {
 //     console.log('Hata:', error);
 //   });
+
+
+// ---------------------------------------TASK 3---------------------------------
+function reportLetters(str) {
+    let letters = {} ;
+    for (let i = 0; i < str.length; i++) {
+        const letter = str[i];
+        letters[letter] = (letters[letter] || 0) +1;   
+    };
+    return letters
+}
+console.log(reportLetters('cavidan'));
+
+function checkIsInside(str1, str2){
+    if (str1.includes(str2)) {
+       console.log(`${str2} + ${str1}`);
+    } else{
+        console.log(`${str1} + ${str2}`);
+    }
+}
+checkIsInside("hello world" ,"world")

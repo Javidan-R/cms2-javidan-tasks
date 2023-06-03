@@ -63,12 +63,12 @@ const obj = {
 // console.log(obj);
 
 // ------------
-// Object.prototype.firstProperty = function (){
-//   let first= Object.values(this)[0]
-//   return first
-// }
-//  obj  = obj.firstProperty()
-// console.log(obj);
+  // Object.prototype.firstProperty = function (){
+  //   let first= Object.values(this)[0]
+  //   return first
+  // }
+  //  obj  = obj.firstProperty()
+  // console.log(obj);
 // -----------
 // Object.prototype.lastProperty = function (){
 //   let last = Object.values(this).length - 1;
