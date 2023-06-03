@@ -1,2 +1,2 @@
 # cms2-javidan-tasks
-Code Marketing MMC 
+Code Marketing MMC learning
